@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            border: solid black;
+        }
+        th{
+            border: solid red;
+        }
+        td{
+            border: solid blue;
+        }
+    </style>
+</head>
+<body>
+    <h1 align="center">Тюнинг машини</h1>
+    <!-- <h2 id="Q1"></h2>
+    <h2 id="Q2"></h2>
+    <h2 id="Q3"></h2>
+    <h2 id="Q4"></h2>
+    <h2 id="Q5"></h2> -->
+    <table>
+        <tr>
+            <th>Двигун</th>
+            <th>Колеса</th>
+            <th>Салон</th>
+            <th>Турбо надув</th>
+            <th>Корпус</th>
+            </tr>
+        <tr>
+            <td id="Q1"></td>
+            <td id="Q2"></td>
+            <td id="Q3"></td>
+            <td id="Q4"></td>
+            <td id="Q5"></td>
+        </tr>
+    </table>
+
+    <script>
+        alert("Це сайт на якому ти можеш робити свій тюнинг для машин:")
+        let q1 = prompt("Двигун:")
+        let q2 = prompt("Колеса:")
+        let q3 = prompt("Салон (Шкіряний і так далі):")
+        let q4 = prompt("Є турбо надув")
+        let q5 = prompt("Корпус:")
+
+        let Q1 = document.getElementById("Q1");
+        let Q2 = document.getElementById("Q2");
+        let Q3 = document.getElementById("Q3");
+        let Q4 = document.getElementById("Q4");
+        let Q5 = document.getElementById("Q5");
+
+
+        Q1.innerHTML = q1;
+        Q2.innerHTML = q2;
+        Q3.innerHTML = q3;
+        Q4.innerHTML = q4;
+        Q5.innerHTML = q5;
+
+    </script>
+</body>
+</html>

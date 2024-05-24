@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <h1 align="center">Test</h1><br><br>
+    <h1 align="center">Твій бал :</h1>
+    <h1 align="center" id="balls"></h1>
+
+
+    <script>
+        let qest1 = prompt("1) запетання чому дорівнює число π")
+        let qest2 = prompt("2)Коли Україна стала незалежна (Рік,Міс,день)");
+        let qest3 = prompt("Чи є земля круглою ??");
+        let ball = 0;
+
+        if (qest1 == "3,14"){
+            ball = ball + 1;
+        }
+        if (qest2 == "1991,Серпень,24"){
+            ball = ball + 1;
+        }
+        if (qest3 == "Так"){
+            ball = ball + 1;
+        }
+        console.log(ball)
+
+        let balls = document.getElementById("balls");
+
+        if (ball == 3){
+        balls.innerHTML = 12;
+        balls.style.color = "green";
+        }
+        if (ball == 2){
+        balls.innerHTML = 8;
+        balls.style.color = "orange";
+        }
+        if (ball == 1){
+        balls.innerHTML = 4;
+        balls.style.color = "yellow";
+        }
+        if (ball == 0){
+        balls.innerHTML = 1;
+        balls.style.color = "red";
+        }
+    </script>
+</body>
+</html>
